@@ -1,0 +1,319 @@
+/*CSS for CSA*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 10.5pt;
+	line-height:170%;
+	font-family: 'Lato', sans-serif;
+	color: #000;
+	background-color:#000;
+	background-image: url(images/background.png);
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+
+.content{
+	margin: 20px;
+	padding: 20px;
+}
+
+.nivocontainer{
+	width: 960px;
+	height: 500px;
+	margin: 20px auto 0px auto;
+}
+
+.textcontent{
+
+	margin: 20px;
+	padding: 20px;
+}
+
+.imagecontent{
+	width: 250px;
+	margin: 20px 20px 20px 10px;
+	padding: 20px 20px 20px 10px;
+	float: right;
+	background-color: blue;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(fonts/BebasNeue-webfont.ttf);
+}
+
+::selection {
+	background: #2FE0A0;
+	color: white;
+	text-shadow: none;
+}
+
+h1, h2, h3{
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: normal;
+	padding: 10px 0 0 0;
+	line-height: 120%;
+}
+
+h1{
+	font-size: 45px
+}
+
+h2{
+	font-size: 35px;
+}
+
+h3{
+	font-size:25px;
+}
+
+p{
+	padding-bottom: 10px;
+}
+
+.welcome strong{
+	color: #2FE0A0;
+	font-weight: normal;
+}
+
+strong{
+	color: #000;
+}
+
+em{
+	color: #000;
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: normal;
+	font-size: 25px;
+}
+blockquote {
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 30px;
+	line-height:120%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 50px;
+	border-left: 6px solid #2FE0A0;
+} 
+
+.line{
+	border-bottom:  1px solid #2FE0A0;
+	margin: -5px 0 5px 0;
+	width: 880px;
+}
+
+.welcome{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.welcome h1{
+	color: #FFF
+}
+
+/*----------HEADER----------*/
+
+#header{
+	position:relative;
+	width: 910px;
+	height: 110px;
+	margin: 0px auto;
+	padding: 25px;
+	text-align: left;
+	clear:both;
+}
+
+#logo{
+	float: left;
+	margin-top:5px;
+	margin-bottom:5px;
+
+	position:relative;
+}
+
+#logo p{
+	text-indent:-5000px;
+}
+
+#navigation{
+	float: right;
+	text-align: right;
+	margin-top: 50px;
+	position:relative;
+}
+
+#navigation li{
+	display:inline;
+	padding: 15px;
+	font-size: 35px;
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: normal;
+}
+
+#navigation a{
+	text-decoration:none;
+	color:#FFF;
+	text-shadow: 1px 1px 3px #000;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+#navigation a:hover{
+	color:#2FE0A0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: allå 0.3s ease-out;
+}
+
+
+/*----------LINKS----------*/
+a {
+	text-decoration:none;
+	color:#179A6A;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+a:hover {
+	color:#AAA;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: allå 0.3s ease-out;
+}
+
+/*----------FOOTER----------*/
+#footer {
+	height: 20px;
+	margin: 15px auto;
+	overflow: hidden;
+	padding:5px 0;
+	font-size: 6px;
+	text-align: center;
+/*	border-top: 1px solid #2FE0A0;*/
+	background-image:url('images/background.png')
+}
+
+#footer p{
+	font-size: 11px;
+	color: #FFF;
+}
+
+
+/*----------BOARD----------*/
+ul.box {
+	position: relative;
+	z-index: 1; /* prevent shadows falling behind containers with backgrounds */
+	overflow: hidden;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+ul.box li {
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 200px;
+	padding: 0;
+	/*border: 1px solid #efefef;*/
+	margin: 0 15px 15px 0;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+}
+
+ul.box li:before,
+ul.box li:after {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	width: 70%;
+	max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+	max-height: 100px;
+	height: 55%;
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skew(-15deg) rotate(-6deg);
+	-moz-transform: skew(-15deg) rotate(-6deg);
+	-ms-transform: skew(-15deg) rotate(-6deg);
+	-o-transform: skew(-15deg) rotate(-6deg);
+	transform: skew(-15deg) rotate(-6deg); }
+
+
+ul.box li:after {
+	left: auto;
+	right: 10px;
+	-webkit-transform: skew(15deg) rotate(6deg);
+	-moz-transform: skew(15deg) rotate(6deg);
+	-ms-transform: skew(15deg) rotate(6deg);
+	-o-transform: skew(15deg) rotate(6deg);
+	transform: skew(15deg) rotate(6deg); 
+}
+
+.anim {
+	-webkit-transition: all .3s ease 0s;
+	-moz-transition: all .3s ease 0s;
+	-ms-transition: all .3s ease 0s;
+	-o-transition: all .3s ease 0s;
+	transition: all .3s ease 0s;
+}
+
+.one_work {
+	background-color: #000;
+	display: block;
+	float: left;
+	height: 200px;
+	width: 200;
+	margin-right: 16px;
+	margin-bottom: 16px;
+	position: relative;
+}
+
+.one_work div {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	background-color: #000;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+}
+
+.one_work div h3 {
+	color: #2FE0A0;
+	padding: 11px 0;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	top: 60px;
+	font-weight: normal;
+}
+
+.one_work div p {
+	color: #FFF;
+	position: relative;
+	text-align: center;
+	top: 65px;
+	font-size: 10px;
+	
+}
+
+.one_work:hover div,
+.one_work:focus div {
+	opacity: 1;
+}
