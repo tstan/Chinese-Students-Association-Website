@@ -196,7 +196,7 @@ blockquote {
 	position:relative;
 }
 
-#navigation li{
+#navigation ul li{
 	display:inline;
 	padding: 15px;
 	font-size: 35px;
@@ -219,7 +219,6 @@ blockquote {
 	-moz-transition: all 0.3s ease-out;
 	transition: allå 0.3s ease-out;
 }
-
 
 /*----------LINKS----------*/
 a {
